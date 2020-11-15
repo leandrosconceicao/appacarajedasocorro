@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'screens/splash.dart';
-import 'screens/pedidos.dart';
+import 'oldScreens/pedidos.dart';
 import 'package:leandrotech/screens/telaPedidos.dart';
 
 void main() {
@@ -22,7 +21,7 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     // SystemChrome.setEnabledSystemUIOverlays([]);
-    Future.delayed(Duration(seconds: 3)).then((_) {
+    Future.delayed(Duration(seconds: 2)).then((_) {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (context) => MyHome()));
     });
@@ -30,12 +29,14 @@ class _SplashState extends State<Splash> {
 
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blue[300],
+      color: Colors.yellowAccent,
       child: Center(
         child: Container(
           width: 150,
           height: 150,
-          child: Image.asset('images/newLogo.png'),
+          child: Image.asset(
+            'images/newLogo.png',
+          ),
         ),
       ),
     );

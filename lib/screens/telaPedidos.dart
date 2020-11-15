@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:leandrotech/screens/tabs/pedidos.dart';
+import 'package:leandrotech/screens/tabs/pedidosIndividuais.dart';
 import 'package:leandrotech/screens/tabs/second.dart';
 
 void main() {
@@ -61,9 +61,11 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
             Tab(
               // set icon to the tab
               icon: Icon(Icons.fastfood),
+              child: Text('Pedidos individuais'),
             ),
             Tab(
               icon: Icon(Icons.restaurant_menu),
+              child: Text('Pedidos mesas'),
             ),
           ],
           // setup the controller

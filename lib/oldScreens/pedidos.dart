@@ -99,6 +99,9 @@ class _PedidosScreenState extends State<PedidosScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Pedidos"),
+      ),
       backgroundColor: Colors.yellow[300],
       body: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(5.0, 15.0, 5.0, 10.0),
